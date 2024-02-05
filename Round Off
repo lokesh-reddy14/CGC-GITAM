@@ -1,0 +1,20 @@
+//Write a program to get a float value from the user and display it in the below-mentioned format.//
+
+//HINT: Use ceil() and floor() functions from the header file.//
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float inputValue;
+    
+    scanf("%f", &inputValue);
+
+    int roundedDown = (int)floor(inputValue);
+    int roundedUp = (int)ceil(inputValue);
+
+    printf("%d\n%d\n%d\n", roundedDown, roundedUp, (int)inputValue);
+
+    return 0;
+}

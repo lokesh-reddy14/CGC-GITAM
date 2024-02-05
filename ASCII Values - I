@@ -1,0 +1,13 @@
+//Write a program to get a character as input and print its ASCII value.//
+
+#include <stdio.h>
+
+int main() {
+    char charInput;
+    scanf("%c", &charInput);
+    int asciiValue = charInput;
+    printf("%d",asciiValue);
+
+    return 0;
+}
+

@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    float principal, rate, years,interest,amount,discount,finalSettlement;
+    scanf("%f%f%f", &principal, &rate, &years);
+    interest = (principal * rate * years) / 100.0;
+    amount = principal + interest;
+    discount = 0.02 * interest;
+    finalSettlement = amount - discount;
+    printf("%.2f\n%.2f\n%.2f\n%.2f\n", interest, amount, discount, finalSettlement);
+    return 0;
+}

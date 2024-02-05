@@ -1,0 +1,14 @@
+Kamal was traveling from Korea to USA and he was not aware of the currency system of USA. Can you please help him to add two dollars and cents?
+
+
+#include <stdio.h>
+int main() {
+    int dollar1, cent1, dollar2, cent2;
+    scanf("%d%d%d%d", &dollar1, &cent1, &dollar2, &cent2);
+    int totalCents = cent1 + cent2;
+    int totalDollars = dollar1 + dollar2 + (totalCents / 100);
+    int remainingCents = totalCents % 100;
+    printf("%d\n%d\n", totalDollars, remainingCents);
+    return 0;
+}
+

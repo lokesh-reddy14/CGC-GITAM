@@ -1,0 +1,18 @@
+//Write a program to print the details of a student. The student's details consist of his/her name, age, CGPA, and grade.//
+
+#include <stdio.h>
+
+int main() {
+    char name[50];
+    int age;
+    float cgpa;
+    char grade;
+
+    scanf("%s%d%f %c", name, &age, &cgpa, &grade);
+   cgpa=(floor(cgpa*100))/100;
+
+    printf("Name: %s\nAge: %d\nCGPA: %.2f\nGrade: %c\n", name, age, cgpa, grade);
+
+    return 0;
+}
+

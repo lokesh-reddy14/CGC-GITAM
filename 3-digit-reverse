@@ -1,0 +1,13 @@
+//Write a program to reverse a 3-digit number.//
+
+#include <stdio.h>
+int main()
+{
+  int num,onesDigit,tensDigit,hundredsDigit;
+  scanf("%d",&num);
+  onesDigit = num%10;
+  tensDigit = (num/10)%10;
+  hundredsDigit = num/100;
+   printf("%d%d%d",onesDigit,tensDigit,hundredsDigit);
+   return 0;
+}
